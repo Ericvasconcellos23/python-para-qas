@@ -105,3 +105,5 @@ codigo = 500
 
 if codigo not in erros_crticos:
     print(f"Código {codigo} é um códgio de sucesso")
+
+
