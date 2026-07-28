@@ -39,22 +39,22 @@ from pathlib import Path
 
 # Protegendo contra Sobrescrita Acidental
 
-def salvar_com_portecao(caminho, conteudo):
-    path = Path(caminho)
-
-    if path.exists():
-        print(f"Arquivo já existe: {path.name}")
-        print(f"Para sobrescrever, exclua o arquivo primeiro.")
-        return False
-
-    with open(path, "w", encoding="utf-8") as f:
-        f.write(conteudo)
-    print(f"Arquivo salvo: {path.name}")
-    return True
-
-# Primeira Chamada - Salvar normalmente
-salvar_com_portecao("evidencia_sprint42.txt", "Evidência de execução sprint 42\n")
-
-
-# Segunda Chamada - Bloqueada
-salvar_com_portecao("evidencia_sprint42.txt", "Tentativa de sobrescrita\n")
+# def salvar_com_portecao(caminho, conteudo):
+#     path = Path(caminho)
+#
+#     if path.exists():
+#         print(f"Arquivo já existe: {path.name}")
+#         print(f"Para sobrescrever, exclua o arquivo primeiro.")
+#         return False
+#
+#     with open(path, "w", encoding="utf-8") as f:
+#         f.write(conteudo)
+#     print(f"Arquivo salvo: {path.name}")
+#     return True
+#
+# # Primeira Chamada - Salvar normalmente
+# salvar_com_portecao("evidencia_sprint42.txt", "Evidência de execução sprint 42\n")
+#
+#
+# # Segunda Chamada - Bloqueada
+# salvar_com_portecao("evidencia_sprint42.txt", "Tentativa de sobrescrita\n")
