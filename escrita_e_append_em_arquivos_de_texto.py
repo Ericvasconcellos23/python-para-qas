@@ -58,3 +58,4 @@ from pathlib import Path
 #
 # # Segunda Chamada - Bloqueada
 # salvar_com_portecao("evidencia_sprint42.txt", "Tentativa de sobrescrita\n")
+
